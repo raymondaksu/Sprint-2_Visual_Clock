@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visual Clock">
+    <meta name="keywords" content="clock, visual clock">
+    <title>Visual Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://freepngimg.com/download/clock/5-2-clock-png-image.png" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+    <header>
+        <h1>Visual Clock</h1>
+    </header>
+    <main>
+        <div class="left_digital">
+            <div class="left_digital_header">
+            <h2>Digital Design</h2>
+            </div>
+            <div id="digitalClock">
+            </div>
+        </div>
+        <div class="right_analog">
+            <div class="right_analog_header">
+            <h2>Analog Design</h2>
+            </div>
+            <div id="analogClock">
+                <svg width="448" height="448" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="transparent" d="M-9-9h501v501H-9z" />
+                    <g transform="translate(24 24)">
+                      <circle stroke="rgb(7, 54, 3)" stroke-width="24" fill="rgb(75, 116, 21)" stroke-linecap="square" cx="200" cy="200" r="212" />
+                      <g fill="#FFF" font-family="HelveticaNeue-Bold, Helvetica Neue, Arial, sans-serif" font-size="100"
+                        font-weight="bold" opacity=".9">
+                        <text transform="translate(34.943 23.908)">
+                          <tspan x="128.159" y="60" style="font-size: 65px;">12</tspan>
+                        </text><text transform="translate(34.943 23.908)">
+                          <tspan x="295.614" y="206.46" style="font-size: 70px;">3</tspan>
+                        </text><text transform="translate(34.943 23.908)">
+                          <tspan x="0.464" y="206.46" style="font-size: 70px;">9</tspan>
+                        </text><text transform="translate(34.943 23.908)">
+                          <tspan x="144.798" y="340.161" style="font-size: 70px;">6</tspan>
+                        </text></g>
+                      <g transform="translate(13.793 13.22)">
+                        <circle fill-opacity=".5" fill="#FFF" cx="3.678" cy="186.667" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="27.586" cy="96.552" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="95.632" cy="27.586" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="185.747" cy="3.678" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="276.782" cy="27.586" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="344.828" cy="96.552" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="368.736" cy="186.667" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="344.828" cy="277.701" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="276.782" cy="345.747" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="185.747" cy="369.655" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="95.632" cy="346.667" r="3.678" />
+                        <circle fill-opacity=".5" fill="#FFF" cx="27.586" cy="277.701" r="3.678" />
+                        <circle stroke="#0041C5" stroke-width="5" cx="186.667" cy="187.241" r="6.695" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <div class="center"></div>
+                <div class="second"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+              </div>
+        </div>
+    </main>
+</div>
+<script src="myScript_analog.js"></script>
+<script src="myScript_digital.js"></script>
+</body>
+</html>

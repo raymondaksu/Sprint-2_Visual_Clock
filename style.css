@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('https://previews.123rf.com/images/stillfx/stillfx1608/stillfx160800303/62113826-clocks-and-abstract-blue-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: aliceblue;
+    background-color: rgb(40, 21, 216);
+    padding: 0.5rem 2rem;
+    outline-style: ridge;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right_analog {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    padding-bottom: 2rem;
+}
+
+.right_analog_header h2 {
+    color: aliceblue;
+    background-color: rgb(40, 21, 216);
+    padding: 0.2rem 1rem;
+    outline-style: ridge;
+}
+
+.left_digital {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-bottom: 2rem;
+}
+
+.left_digital_header h2 {
+    color: aliceblue;
+    background-color: rgb(40, 21, 216);
+    padding: 0.2rem 1rem 0.2rem;
+    outline-style: ridge;
+    margin-bottom: 6rem;
+}
+
+#analogClock {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+#analogClock .second,
+#analogClock .hour,
+#analogClock .minute {
+  box-shadow: 0 0 10px #222;
+  position: relative;
+  transform-origin: left;
+  border-radius: 10px;
+}
+
+#analogClock .second {
+    height: 0px;
+    width: 140px;
+    border-top: 2px solid #E83151;
+    left: 70px;
+    top: 0px;
+    transform: rotate(var(--seconds));
+    z-index: 101;
+  }
+  
+#analogClock .hour {
+    height: 0px;
+    width: 75px;
+    border-top: 8px solid #FFF;
+    left: 40px;
+    top: 0px;
+    transform: rotate(var(--hours));
+  }
+  
+#analogClock .minute {
+    height: 0px;
+    width: 140px;
+    border-top: 4px solid #CCC;
+    left: 70px;
+    top: 0px;
+    transform: rotate(var(--minutes));
+  }
+
+#analogClock > * {
+    grid-area: 1 / 1;
+  }
+
+#analogClock .center {
+    width: 10px;
+    height: 10px;
+    background-color: #E83151;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+  }
+
+  #x {
+      color: rgb(7, 54, 3);
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+  #digitalClock {
+    font-family: 'Orbitron', sans-serif;
+    color: #66ff99;
+    font-size: 65px;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(0, 10, 6);
+    outline-style: ridge;
+    outline-width: 4px;
+    box-shadow: 0 0 15px 10px #000;
+  }
